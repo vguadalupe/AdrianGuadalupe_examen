@@ -16,5 +16,23 @@ namespace AdrianGuadalupe_examen
         {
             InitializeComponent();
         }
+
+        private async void btnAbrirRegistro_Clicked(object sender, EventArgs e)
+        {
+            string user = txtUser.Text;
+            string pass = txtPassword.Text;
+
+            string user_val = "estudiante2020";
+            string pass_val = "uisrael2020";
+
+            if (user == user_val && pass == pass_val)
+            {
+                await Navigation.PushAsync(new Registro(user));
+            }
+            else
+            {
+                await DisplayAlert("Login Incorrecto", "Datos incorrectos", "Volver");
+            }
+        }
     }
 }

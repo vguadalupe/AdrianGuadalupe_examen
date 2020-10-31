@@ -10,7 +10,7 @@ namespace AdrianGuadalupe_examen
         {
             InitializeComponent();
 
-            Login = new Login();
+            MainPage = new Login();
         }
 
         protected override void OnStart()
