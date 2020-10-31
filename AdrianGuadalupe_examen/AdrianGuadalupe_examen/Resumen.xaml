@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdrianGuadalupe_examen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbluser" BackgroundColor="Aqua" TextColor="Blue"></Label>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Su Nombre: " ></Label>
+                <Label Grid.Row="1" Grid.Column="0" Text="Su Monto inicial: " ></Label>
+                <Label Grid.Row="2" Grid.Column="0" Text="Su cuota mensual: " ></Label>
+
+                <Label Grid.Row="0" Grid.Column="1" x:Name="lblname" FontSize="20" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Blue"></Label>
+                <Label  Grid.Row="1" Grid.Column="1" x:Name="lblinitp" FontSize="20" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                <Label  Grid.Row="2" Grid.Column="1" x:Name="lblpay" FontSize="20" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                
+             
+            </Grid>
+
+
+
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

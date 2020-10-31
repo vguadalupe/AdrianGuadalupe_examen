@@ -4,19 +4,30 @@
              x:Class="AdrianGuadalupe_examen.Registro">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Registro" BackgroundColor="Aqua" TextColor="Blue"></Label>
-            <Label x:Name="lbluser"></Label>
+              <Label x:Name="lbluser" BackgroundColor="Aqua" TextColor="Blue"></Label>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
+                
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Button Grid.Row="0" Grid.Column="0" x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" />
-                <Button Grid.Row="0" Grid.Column="1" x:Name="btnResumen" Text="Resumen" Clicked="btnResumen_Clicked" />
+                <Label Grid.Row="0" Grid.Column="0" Text="Nombre" ></Label>
+                <Label Grid.Row="1" Grid.Column="0" Text="Cuota Inicial" ></Label>
+                <Label Grid.Row="2" Grid.Column="0" Text="Pago Mensual" ></Label>
+
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtNombre" Placeholder="Ingrese su Nombre"/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtMonto" Placeholder="Ingrese el monto inicial"/>
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtCuota" Placeholder="Su pago mensual aqui..."/>
+
+                <Button Grid.Row="3" Grid.Column="0" x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" />
+                <Button Grid.Row="3" Grid.Column="1" x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" />
             </Grid>
         </StackLayout>
     </ContentPage.Content>

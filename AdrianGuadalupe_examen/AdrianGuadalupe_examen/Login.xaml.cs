@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace AdrianGuadalupe_examen
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
     {
         public Login()
@@ -27,6 +27,7 @@ namespace AdrianGuadalupe_examen
 
             if (user == user_val && pass == pass_val)
             {
+                user = "Usuario conectado: " + user;
                 await Navigation.PushAsync(new Registro(user));
             }
             else

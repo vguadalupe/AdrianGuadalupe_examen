@@ -9,8 +9,7 @@ namespace AdrianGuadalupe_examen
         public App()
         {
             InitializeComponent();
-
-            MainPage = new Login();
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()
